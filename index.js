@@ -1,21 +1,8 @@
-var express = require('express'),
-    cookieParser = require('cookie-parser'),
-    bodyParser = require('body-parser');
+const express = require('express')
+const path = require('path')
+const PORT = process.env.PORT || 5000
 
-
-var app = express();
-
-
-app.use(express.logger('dev'));     /* 'default', 'short', 'tiny', 'dev' */
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
-
-app.use(bodyParser.json());
-app.use(express.static(__dirname + '/webpage'));
-
-
-var port = Number(process.env.PORT || 9000);
-app.listen(port);
-console.log('Listening on port ' + port + '...');
+express()
+  .use(express.static(path.join(__dirname, 'webpage')))
+  .get('/', (req, res) => res.render('pages/index'))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
