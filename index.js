@@ -1,8 +1,17 @@
-const express = require('express')
-const path = require('path')
+const express = require('express') ,
+      cookieParser = require('cookie-parser') ,
+      bodyParser = require('body-parser') ,
+      app = express();
+
 const PORT = process.env.PORT || 5000
 
-express()
-  .use(express.static(path.join(__dirname, 'webpage')))
-  .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.use(express.logger('dev'));     /* 'default', 'short', 'tiny', 'dev' */
+app.use(bodyParser.urlencoded({
+extended: true
+}));
+
+app.use(bodyParser.json());
+app.use(express.static(__dirname + '/webpage'));
+
+
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
