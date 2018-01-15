@@ -1,6 +1,6 @@
 # Repositorio oficial de la página web de Suave un Toque
 
-[![node (scoped)](https://img.shields.io/node/v/@stdlib/stdlib.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]() [![build](https://img.shields.io/badge/express-%5E4.16.2-brightgreen.svg)]() [![build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)]()
+[![sut](https://img.shields.io/badge/suave-un%20toque-yellow.svg)]() [![node (scoped)](https://img.shields.io/node/v/@stdlib/stdlib.svg)]() [![npm](https://img.shields.io/npm/v/npm.svg)]() [![build](https://img.shields.io/badge/express-%5E4.16.2-brightgreen.svg)]() [![build](https://img.shields.io/appveyor/ci/gruntjs/grunt.svg)]()
 
 ## Contenido del Sitio (en ningún orden específico)
 - Cast and Crew
