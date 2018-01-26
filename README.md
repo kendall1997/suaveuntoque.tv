@@ -33,7 +33,7 @@
 
 ---
 
-> proyecto open source desarrollado en parte por **Shiguma Softworks** con ayuda de **Julio Andrés Rodriguez** y **Andrés Madrigal**
+> proyecto open source desarrollado en parte por **Chiripachango Softworks** con ayuda de **Julio Andrés Rodriguez** y **Andrés Madrigal**
 
 
 http://www.suaveuntoque.tv
